@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #changeImageBtn{
+            background: yellow;
+            border: 1px solid darkblue;
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px darkblue,
+                        0px 0px 10px dodgerblue inset; 
+        width: 99px;
+        height: 51px;
+        padding: 3px 3px;
+        color: #000;
+        font-weight: bold;
+margin: 30px;
+cursor: pointer;
+                    }
+                    .btnk{
+                        background: #808080;
+            border: 1px solid #333333;
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px #333333,
+                        0px 0px 10px #454545 inset; 
+        width: 99px;
+        height: 51px;
+        padding: 3px 3px;
+        cursor: pointer;
+                    }
+                    img{
+                        border-radius: 5px 5px 5px 5px;
+                    }
+    </style>
+</head>
+<body>
+<center>
+ 
+    <img id="myImage" src="images/resim1.jpg" alt="Resim" width="500">
+    <button id="changeImageBtn">AÇ-KAPAT</button>
+</center>
+    <script>
+        document.getElementById("changeImageBtn").onclick = function() {
+    var image = document.getElementById("myImage");
+    if (image.src.includes("images/resim1.jpg")) {
+        image.src = "images/resim2.jpg";
+    } else {
+        image.src = "images/resim1.jpg";
+    }
+};
+
+    </script>
+
+    </script>
+</body>
+</html>
